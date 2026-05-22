@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+:root {
+    --bg-base: #ffffff;
+    --bg-surface: #f8faff;
+    --color-navy: #1b2a4a;
+    --color-navy-light: #2d3f6b;
+    --color-gold: #c9a84c;
+    --color-gold-dim: rgba(201, 168, 76, 0.15);
+    --color-teal: #2d7d9a;
+    --color-teal-dark: #1f5a73;
+    --text-primary: #1b2a4a;
+    --text-secondary: #546480;
+    --text-muted: #8fa0b8;
+    --text-on-dark: #c4cedc;
+    --border-default: #e0e6ef;
+    --border-subtle: #eef1f7;
+    --state-error: #dc2626;
+    --state-success: #16a34a;
+}
+
+@theme inline {
+    --color-base: var(--bg-base);
+    --color-surface: var(--bg-surface);
+    --color-navy: #1b2a4a;
+    --color-navy-light: #2d3f6b;
+    --color-gold: #c9a84c;
+    --color-gold-dim: rgba(201, 168, 76, 0.15);
+    --color-teal: #2d7d9a;
+    --color-teal-dark: #1f5a73;
+    --color-primary: var(--text-primary);
+    --color-secondary: var(--text-secondary);
+    --color-muted: var(--text-muted);
+    --color-on-dark: var(--text-on-dark);
+    --color-default: var(--border-default);
+    --color-subtle: var(--border-subtle);
+    --color-error: var(--state-error);
+    --color-success: var(--state-success);
+    --font-display: "Playfair Display", serif;
+    --font-sans: Inter, system-ui, sans-serif;
+    --font-mono: "Roboto Mono", monospace;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: var(--bg-base);
+    color: var(--text-primary);
+    font-family: var(--font-sans), system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+a {
+    text-decoration: none;
+}
+
+::selection {
+    background: var(--color-gold-dim);
+    color: var(--text-primary);
+}
+
+.skip-link {
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    z-index: 50;
+    transform: translateY(-150%);
+    border-radius: 0.25rem;
+    background: var(--color-gold);
+    color: var(--color-navy);
+    padding: 0.75rem 1rem;
+    font-size: 0.875rem;
+    font-weight: 700;
+    transition: transform 150ms ease;
+}
+
+.skip-link:focus {
+    transform: translateY(0);
+}
