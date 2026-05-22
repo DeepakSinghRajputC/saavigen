@@ -33,5 +33,9 @@ export const navigation = [
   { label: "Contact", href: "/contact" },
 ];
 
+export const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
+export const logoPath = `/images/SaaviGenAI_Key_Logo.png`;
+
 export const siteUrl =
   process.env.NEXT_PUBLIC_SITE_URL || "https://saavigen.ai";
