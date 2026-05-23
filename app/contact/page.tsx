@@ -1,5 +1,4 @@
 import { Mail } from "lucide-react";
-import { ContactForm } from "@/components/sections/ContactForm";
 import { SectionLabel } from "@/components/ui/SectionLabel";
 import { pageMetadata } from "@/lib/metadata";
 import { CONTACT_EMAIL } from "@/lib/site";
@@ -17,31 +16,28 @@ export default function ContactPage() {
         <div className="mb-8 md:mb-10">
           <SectionLabel
             label="Contact"
-            heading="Tell us what you are trying to secure."
-            subheading="Share your goals, current constraints, and the service area you are most interested in. We will use that context to shape the first conversation."
+            heading="Get in touch"
+            subheading="Reach out via email for inquiries about our services."
           />
         </div>
 
-        <div className="grid gap-8 lg:grid-cols-[1.15fr_0.85fr] lg:items-start">
-          <ContactForm />
-          <aside className="rounded-2xl border border-default bg-surface p-6 md:p-8">
-            <h2 className="font-display text-2xl font-bold text-primary">
-              Contact details
-            </h2>
-            <div className="mt-6 flex items-center gap-3 text-primary">
-              <Mail className="h-5 w-5 text-gold" />
-              <a
-                className="text-sm font-semibold text-teal transition-colors hover:text-teal-dark focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal"
-                href={`mailto:${CONTACT_EMAIL}`}
-              >
-                {CONTACT_EMAIL}
-              </a>
-            </div>
-            <p className="mt-5 text-sm leading-relaxed text-secondary">
-              Send a short note about your priorities and we will respond with
-              clear next steps.
-            </p>
-          </aside>
+        <div className="text-center">
+          <h2 className="font-display text-3xl font-bold text-primary mb-6">
+            Contact Us
+          </h2>
+          <p className="text-xl text-secondary mb-8">
+            For all inquiries, please contact us via email:
+          </p>
+          <a
+            href={`mailto:${CONTACT_EMAIL}`}
+            className="inline-block bg-teal hover:bg-teal-dark text-white font-semibold px-6 py-3 rounded-lg transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal focus-visible:ring-offset-2"
+          >
+            <Mail className="mr-3 h-5 w-5" />
+            {CONTACT_EMAIL}
+          </a>
+          <p className="mt-8 text-sm leading-relaxed text-secondary">
+            We aim to respond to all emails within 1-2 business days.
+          </p>
         </div>
       </div>
     </section>
