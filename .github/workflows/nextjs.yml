@@ -42,7 +42,8 @@ jobs:
       - name: Build static site
         run: npm run build
         env:
-          NEXT_PUBLIC_SITE_URL: https://saavigen.ai
+          NEXT_PUBLIC_BASE_PATH: /saavigen
+          NEXT_PUBLIC_SITE_URL: https://deepaksinghrajputc.github.io
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

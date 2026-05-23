@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Playfair_Display, Roboto_Mono } from "next/font/google";
 import { Footer } from "@/components/layout/Footer";
 import { Navbar } from "@/components/layout/Navbar";
+import { logoPath } from "@/lib/site";
 import "@/styles/globals.css";
 
 const inter = Inter({
@@ -31,7 +32,7 @@ export const metadata: Metadata = {
   description:
     "Practitioner-led managed security and AI governance for teams adopting intelligent systems.",
   icons: {
-    icon: "/images/SaaviGenAI_Key_Logo.png",
+    icon: logoPath,
   },
 };
 

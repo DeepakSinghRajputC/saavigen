@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { CONTACT_EMAIL, services } from "@/lib/site";
+import { CONTACT_EMAIL, logoPath, services } from "@/lib/site";
 
 export function Footer() {
   const year = new Date().getFullYear();
@@ -15,7 +15,7 @@ export function Footer() {
               href="/"
             >
               <Image
-                src="/images/SaaviGenAI_Key_Logo.png"
+                src={logoPath}
                 alt="SaaviGenAI key logo"
                 width={44}
                 height={44}
