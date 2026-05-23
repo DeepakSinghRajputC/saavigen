@@ -33,9 +33,17 @@ export const navigation = [
   { label: "Contact", href: "/contact" },
 ];
 
-export const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+const rawBasePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+export const basePath =
+  rawBasePath === "/" ? "" : rawBasePath.replace(/\/$/, "");
 
-export const logoPath = `/images/SaaviGenAI_Key_Logo.png`;
+function withBasePath(path: string) {
+  if (!basePath) return path;
+  if (path === "/") return `${basePath}/`;
+  return `${basePath}${path}`;
+}
+
+export const logoPath = withBasePath("/images/SaaviGenAI_Key_Logo.png");
 
 export const siteUrl =
   process.env.NEXT_PUBLIC_SITE_URL || "https://saavigen.ai";

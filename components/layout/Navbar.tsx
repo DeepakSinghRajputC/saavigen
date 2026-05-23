@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/Button";
-import { navigation, services } from "@/lib/site";
+import { logoPath, navigation, services } from "@/lib/site";
 import { cn } from "@/lib/utils";
 
 function isActive(pathname: string, href: string) {
@@ -29,7 +29,7 @@ export function Navbar() {
           onClick={() => setOpen(false)}
         >
           <Image
-            src="/images/SaaviGenAI_Key_Logo.png"
+            src={logoPath}
             alt="SaaviGenAI key logo"
             width={44}
             height={44}

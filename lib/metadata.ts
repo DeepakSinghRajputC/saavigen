@@ -1,14 +1,17 @@
 import type { Metadata } from "next";
-import { siteUrl } from "@/lib/site";
+import { basePath, logoPath, siteUrl } from "@/lib/site";
 
-const logoImage = "/images/SaaviGenAI_Key_Logo.png";
+function withBasePath(path: string) {
+  if (path === "/") return `${basePath}/`;
+  return `${basePath}${path}`;
+}
 
 export function pageMetadata(
   title: string,
   description: string,
   path = "/",
 ): Metadata {
-  const url = new URL(path, siteUrl).toString();
+  const url = new URL(withBasePath(path), siteUrl).toString();
 
   return {
     title,
@@ -22,7 +25,7 @@ export function pageMetadata(
       type: "website",
       images: [
         {
-          url: logoImage,
+          url: logoPath,
           width: 1024,
           height: 1024,
           alt: "SaaviGenAI key logo",
@@ -33,7 +36,7 @@ export function pageMetadata(
       card: "summary_large_image",
       title,
       description,
-      images: [logoImage],
+      images: [logoPath],
     },
   };
 }
