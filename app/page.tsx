@@ -5,7 +5,7 @@ import { DifferentiatorCard } from "@/components/ui/DifferentiatorCard";
 import { SectionLabel } from "@/components/ui/SectionLabel";
 import { ServiceCard } from "@/components/ui/ServiceCard";
 import { pageMetadata } from "@/lib/metadata";
-import { services } from "@/lib/site";
+import { basePath, services } from "@/lib/site";
 
 export const metadata = pageMetadata(
   "Securing the AI-Powered Enterprise | SaaviGenAI",
@@ -19,6 +19,7 @@ export default function HomePage() {
         label="Managed Security + AI Governance"
         heading="Securing the AI-powered enterprise."
         subheading="SaaviGenAI combines practitioner-led cyber operations with pragmatic AI governance so teams can adopt intelligent systems without increasing risk. Always on. Always watching."
+        image={`${basePath}/images/newHome.png`}
       />
 
       <section className="bg-base py-12 md:py-16">

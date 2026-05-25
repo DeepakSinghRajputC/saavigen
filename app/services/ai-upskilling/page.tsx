@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/Button";
 import { DifferentiatorCard } from "@/components/ui/DifferentiatorCard";
 import { SectionLabel } from "@/components/ui/SectionLabel";
 import { pageMetadata } from "@/lib/metadata";
+import { basePath } from "@/lib/site";
 
 export const metadata = pageMetadata(
   "AI Upskilling | SaaviGenAI",
@@ -174,6 +175,7 @@ export default function AiUpskillingPage() {
         label="AI Upskilling"
         heading="Your Team Is Using AI. Are They Using It Right?"
         subheading="Practical, hands-on AI training built for enterprise teams — from leadership to developers to security professionals."
+        image={`${basePath}/images/newupkill.png`}
       />
 
       <section className="bg-base py-12 md:py-16">

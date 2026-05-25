@@ -15,7 +15,7 @@ const articles = [
     title:
       "Claude Mythos & Project Glasswing: The Moment AI Crossed Into Cyber Offense Reality",
     description:
-      "Anthropic's Claude Mythos can identify high-severity vulnerabilities, generate functional exploits, and has already found thousands of previously undetected flaws — fundamentally shifting the cybersecurity asymmetry toward AI-assisted attackers.",
+      "Anthropic's Claude Mythos can identify high-severity vulnerabilities, generate functional exploits, and has already found thousands of previously undetected flaws fundamentally shifting the cybersecurity asymmetry toward AI-assisted attackers.",
     author: "Nanda Kumar Kirubakaran",
     date: "April 8, 2026",
     source: "LinkedIn Pulse",
