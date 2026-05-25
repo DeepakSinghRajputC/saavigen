@@ -91,7 +91,7 @@ export default function ManagedSocPage() {
         label="Saavi SOC"
         heading="Your Security. Always On. Always Watching."
         subheading="Enterprise-grade threat monitoring and incident response — without the cost or complexity of building it in-house."
-        image={`${basePath}/images/newSaaviSoc.png`}
+        image={`${basePath}/images/newSaaviSOC.png`}
       />
 
       <section className="bg-base py-12 md:py-16">

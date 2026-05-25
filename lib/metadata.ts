@@ -16,6 +16,7 @@ export function pageMetadata(
   return {
     title,
     description,
+    metadataBase: new URL(siteUrl),
     alternates: { canonical: url },
     openGraph: {
       title,
