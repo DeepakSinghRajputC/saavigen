@@ -38,3 +38,8 @@ yarn-error.log*
 next-env.d.ts
 
 CLAUDE.md
+.claude
+
+# saavigen
+
+SaaviGenAI_Service_Copy.md

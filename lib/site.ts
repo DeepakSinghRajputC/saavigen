@@ -3,24 +3,24 @@ export const CONTACT_EMAIL = "contact@saavigen.ai";
 export const services = [
   {
     number: "01",
-    title: "Managed SOC",
+    title: "Saavi-SOC",
     href: "/services/managed-soc",
     description:
-      "A practitioner-led security operations capability that monitors, triages, and responds to threats without adding operational drag.",
+      "Enterprise-grade threat monitoring and incident response — without the cost or complexity of building it in-house. 24×7 coverage, zero CAPEX, compliance-ready from day one.",
   },
   {
     number: "02",
-    title: "Managed AIDR",
+    title: "Saavi-AIDR",
     href: "/services/aidr",
     description:
-      "AI detection and response support for teams adopting intelligent workflows, autonomous agents, and emerging AI systems.",
+      "Purpose-built managed detection and response for AI-powered applications. Because firewalls don't inspect prompts and SIEMs don't understand agent behaviour.",
   },
   {
     number: "03",
     title: "AI Upskilling",
     href: "/services/ai-upskilling",
     description:
-      "Practical enablement that helps security, governance, and business teams use AI safely, confidently, and responsibly.",
+      "Practical, hands-on AI training for enterprise teams — from every employee to developers to security professionals. Built by practitioners, not slide decks.",
   },
 ];
 
@@ -29,7 +29,7 @@ export const navigation = [
   { label: "AIDR", href: "/services/aidr" },
   { label: "AI Upskilling", href: "/services/ai-upskilling" },
   { label: "About", href: "/about" },
-  { label: "Insights", href: "/insights" },
+  { label: "Testimonials", href: "/testimonials" },
   { label: "Contact", href: "/contact" },
 ];
 
