@@ -12,7 +12,7 @@ export function DifferentiatorCard({ icon, title, description }: DifferentiatorC
       <div className="text-2xl text-gold">{icon}</div>
       <div>
         <h3 className="text-sm font-semibold text-primary">{title}</h3>
-        <p className="mt-2 text-sm leading-relaxed text-secondary">{description}</p>
+        <p className="mt-2 text-[15px] leading-relaxed text-secondary">{description}</p>
       </div>
     </article>
   );

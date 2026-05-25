@@ -16,7 +16,7 @@ const testimonials = [
     name: "Sarah Chen",
     title: "Chief Information Security Officer",
     company: "Nexlance Financial Services",
-    service: "Saavi-SOC",
+    service: "Saavi SOC",
   },
   {
     quote:
@@ -24,15 +24,15 @@ const testimonials = [
     name: "Marcus Williams",
     title: "Chief Technology Officer",
     company: "Healthbridge Technologies",
-    service: "Saavi-SOC",
+    service: "Saavi SOC",
   },
   {
     quote:
-      "We deployed three production LLM agents before realising we had zero visibility into what they were actually doing at runtime. Saavi-AIDR gave us a complete audit trail and flagged an agent misuse pattern within the first two weeks — an unexpected tool invocation that was quietly accessing data outside its intended scope. We would never have found that otherwise.",
+      "We deployed three production LLM agents before realising we had zero visibility into what they were actually doing at runtime. Saavi AIDR gave us a complete audit trail and flagged an agent misuse pattern within the first two weeks — an unexpected tool invocation that was quietly accessing data outside its intended scope. We would never have found that otherwise.",
     name: "Priya Nair",
     title: "Head of AI Platform",
     company: "Cognex Commerce",
-    service: "Saavi-AIDR",
+    service: "Saavi AIDR",
   },
   {
     quote:
@@ -44,11 +44,29 @@ const testimonials = [
   },
   {
     quote:
-      "SaaviGenAI doesn't just protect AI systems — they help you build the governance framework around them. The combination of AIDR monitoring and the upskilling workshops gave us something credible to present to regulators and our risk committee. It showed we're not just adopting AI, we're adopting it responsibly.",
+      "SaaviGenAI doesn't just protect AI systems — they help you build the governance framework around them. The combination of Saavi AIDR monitoring and the upskilling workshops gave us something credible to present to regulators and our risk committee. It showed we're not just adopting AI, we're adopting it responsibly.",
     name: "Ananya Sharma",
     title: "Chief Risk Officer",
     company: "Stratiq Ventures",
-    service: "Saavi-AIDR + AI Upskilling",
+    service: "Saavi AIDR + AI Upskilling",
+  },
+];
+
+const valueCards = [
+  {
+    service: "Saavi SOC",
+    heading: "Onboarded in weeks, not months",
+    body: "Most organisations expect SOC deployment to take quarters. SaaviSOC's structured onboarding gets you from zero to active 24×7 security coverage in weeks — zero CAPEX, no hiring surge, no months of setup.",
+  },
+  {
+    service: "Saavi AIDR",
+    heading: "Visibility into a threat surface",
+    body: "AI has introduced an entirely new attack surface — prompts, agents, tool calls, model behaviour — that your firewall, SIEM, and DLP were never built to see. Saavi AIDR gives you eyes on that surface for the first time.",
+  },
+  {
+    service: "AI Upskilling",
+    heading: "Capability built on understanding",
+    body: "Before reaching for AI tools, participants first understand how LLMs actually work — their strengths, their failure modes, their limits. That foundation is what makes the learning stick and the workflows last.",
   },
 ];
 
@@ -75,12 +93,14 @@ export default function TestimonialsPage() {
                 className="flex flex-col rounded-2xl border border-default bg-surface p-6 md:p-8"
               >
                 <div className="mb-4 h-0.5 w-8 bg-gold" />
-                <blockquote className="mb-6 flex-1 text-sm leading-relaxed text-secondary italic">
+                <blockquote className="mb-6 flex-1 text-[15px] leading-relaxed text-secondary italic">
                   &ldquo;{t.quote}&rdquo;
                 </blockquote>
                 <div className="flex items-end justify-between gap-4">
                   <div>
-                    <p className="text-sm font-semibold text-primary">{t.name}</p>
+                    <p className="text-sm font-semibold text-primary">
+                      {t.name}
+                    </p>
                     <p className="text-xs text-secondary">{t.title}</p>
                     <p className="text-xs text-muted">{t.company}</p>
                   </div>
@@ -101,29 +121,21 @@ export default function TestimonialsPage() {
             heading="Patterns across every engagement."
           />
           <div className="mt-10 grid gap-6 md:grid-cols-3">
-            {[
-              {
-                heading: "Speed to protection",
-                body: "Clients consistently highlight how quickly SaaviSOC gets them from onboarding to active security coverage — weeks, not months.",
-              },
-              {
-                heading: "Visibility they never had",
-                body: "Saavi-AIDR surfaces AI risks that no existing tool in the security stack was able to see — prompts, agent behaviour, tool calls, and data exposure.",
-              },
-              {
-                heading: "Capability that sticks",
-                body: "Upskilling participants describe the training as the first AI programme that gave them workflows they used the following morning, not slides they filed away.",
-              },
-            ].map((item) => (
+            {valueCards.map((item) => (
               <article
                 key={item.heading}
                 className="rounded-2xl border border-default bg-base p-6 md:p-8"
               >
+                <p className="mb-3 font-mono text-xs uppercase tracking-widest text-gold">
+                  {item.service}
+                </p>
                 <div className="mb-4 h-0.5 w-8 bg-gold" />
                 <h3 className="mb-3 font-display text-xl font-bold text-primary">
                   {item.heading}
                 </h3>
-                <p className="text-sm leading-relaxed text-secondary">{item.body}</p>
+                <p className="text-[15px] leading-relaxed text-secondary">
+                  {item.body}
+                </p>
               </article>
             ))}
           </div>
