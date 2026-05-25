@@ -175,7 +175,7 @@ export default function AiUpskillingPage() {
         label="AI Upskilling"
         heading="Your Team Is Using AI. Are They Using It Right?"
         subheading="Practical, hands-on AI training built for enterprise teams — from leadership to developers to security professionals."
-        image={`${basePath}/images/newupkill.png`}
+        image={`${basePath}/images/newupskill.png`}
       />
 
       <section className="bg-base py-12 md:py-16">
