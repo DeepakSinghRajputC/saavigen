@@ -9,7 +9,7 @@ export const metadata = pageMetadata(
   "/contact",
 );
 
-const CONTACT_PHONE = "+91-9742266597";
+const CONTACT_PHONE = "+91 97422 66597";
 
 export default function ContactPage() {
   return (
@@ -40,7 +40,7 @@ export default function ContactPage() {
           </a>
 
           <a
-            href={`tel:${CONTACT_PHONE.replace(/-/g, "")}`}
+            href={`tel:${CONTACT_PHONE.replace(/\s/g, "")}`}
             className="flex items-center gap-4 rounded-2xl border border-default bg-surface p-6 transition-colors hover:border-teal focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal focus-visible:ring-offset-2"
           >
             <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-gold/10 text-gold">

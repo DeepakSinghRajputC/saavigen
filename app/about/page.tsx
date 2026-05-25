@@ -33,7 +33,7 @@ export default function AboutPage() {
                 SaaviGenAI supports mid-market and enterprise teams that need a steady
                 partner across security operations, AI detection and response, and
                 practical workforce enablement. Every engagement is grounded in
-                operational reality — so the business can move forward confidently,
+                operational reality so the business can move forward confidently,
                 without the complexity of building everything in-house.
               </p>
             </div>
@@ -53,7 +53,7 @@ export default function AboutPage() {
               <p className="mb-6 font-display text-xl italic leading-relaxed text-primary">
                 &ldquo;Most enterprises deploying AI today are doing so without any
                 visibility into what those systems are actually doing at runtime. We
-                built SaaviGenAI to change that — and to make security and AI
+                built SaaviGenAI to change that and to make security and AI
                 governance accessible to the organisations that need it most.&rdquo;
               </p>
               <p className="font-mono text-xs uppercase tracking-widest text-gold">
@@ -70,12 +70,12 @@ export default function AboutPage() {
               <p className="mb-4 text-sm leading-relaxed text-secondary">
                 23 years of enterprise experience across Cisco, HPE, and Aruba Networks,
                 spanning engineering, security architecture, enterprise AI adoption, and
-                LLM security. Nanda has designed and operated real systems at scale —
+                LLM security. Nanda has designed and operated real systems at scale
                 and brings that depth to every SaaviGenAI engagement and programme.
               </p>
               <p className="text-sm leading-relaxed text-secondary">
                 Every SaaviGenAI service and course is built from firsthand experience
-                of what breaks in practice — not from industry frameworks recycled into
+                of what breaks in practice not from industry frameworks recycled into
                 advisory outputs. That practitioner perspective is what separates
                 SaaviGenAI from managed service providers and training vendors who have
                 never had to operate what they recommend.
@@ -100,7 +100,7 @@ export default function AboutPage() {
             <DifferentiatorCard
               icon={<Eye className="h-6 w-6" />}
               title="Clarity over noise"
-              description="We translate complex signals into focused decisions, priorities, and next steps — for technical and executive audiences alike."
+              description="We translate complex signals into focused decisions, priorities, and next steps for technical and executive audiences alike."
             />
             <DifferentiatorCard
               icon={<Handshake className="h-6 w-6" />}
@@ -116,7 +116,7 @@ export default function AboutPage() {
           <SectionLabel
             label="Who We Help"
             heading="Teams balancing speed, security, and AI adoption."
-            subheading="SaaviGenAI is designed for organisations that need the confidence of experienced security operations and the flexibility to evolve their AI governance over time — without the overhead of building everything themselves."
+            subheading="SaaviGenAI is designed for organisations that need the confidence of experienced security operations and the flexibility to evolve their AI governance over time without the overhead of building everything themselves."
           />
         </div>
       </section>

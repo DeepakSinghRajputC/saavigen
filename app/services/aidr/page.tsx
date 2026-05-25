@@ -12,6 +12,7 @@ import { HeroSection } from "@/components/sections/HeroSection";
 import { DifferentiatorCard } from "@/components/ui/DifferentiatorCard";
 import { SectionLabel } from "@/components/ui/SectionLabel";
 import { pageMetadata } from "@/lib/metadata";
+import { basePath } from "@/lib/site";
 
 export const metadata = pageMetadata(
   "Saavi AIDR | SaaviGenAI",
@@ -107,6 +108,7 @@ export default function AidrPage() {
         label="Saavi AIDR"
         heading="Your AI Is Running. Do You Know What It's Doing?"
         subheading="Purpose-built threat detection and response for AI-powered applications — because traditional security tools weren't designed for this."
+        image={`${basePath}/images/newSaaviAIdr.png`}
       />
 
       <section className="bg-base py-12 md:py-16">

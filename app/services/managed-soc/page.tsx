@@ -11,6 +11,7 @@ import { HeroSection } from "@/components/sections/HeroSection";
 import { DifferentiatorCard } from "@/components/ui/DifferentiatorCard";
 import { SectionLabel } from "@/components/ui/SectionLabel";
 import { pageMetadata } from "@/lib/metadata";
+import { basePath } from "@/lib/site";
 
 export const metadata = pageMetadata(
   "Saavi SOC | SaaviGenAI",
@@ -90,6 +91,7 @@ export default function ManagedSocPage() {
         label="Saavi SOC"
         heading="Your Security. Always On. Always Watching."
         subheading="Enterprise-grade threat monitoring and incident response — without the cost or complexity of building it in-house."
+        image={`${basePath}/images/newSaaviSoc.png`}
       />
 
       <section className="bg-base py-12 md:py-16">
