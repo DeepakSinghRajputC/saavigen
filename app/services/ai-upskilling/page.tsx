@@ -1,6 +1,7 @@
 import { BookOpen, CheckCircle, Shield, User } from "lucide-react";
 import { FooterCTABand } from "@/components/sections/FooterCTABand";
 import { HeroSection } from "@/components/sections/HeroSection";
+import { Button } from "@/components/ui/Button";
 import { DifferentiatorCard } from "@/components/ui/DifferentiatorCard";
 import { SectionLabel } from "@/components/ui/SectionLabel";
 import { pageMetadata } from "@/lib/metadata";
@@ -37,6 +38,8 @@ const courses = [
     number: "01",
     title: "Beyond ChatGPT",
     tagline: "For Every Employee",
+    summary:
+      "Upgrade every employee from basic chatbot usage to real, safe, and scalable AI capability — covering prompt engineering, workplace applications, and a personal AI productivity blueprint.",
     audience:
       "Employees across all functions — operations, marketing, HR, finance, sales — who want to work smarter, faster, and safely with AI tools.",
     format: "2 days · 12 hours · Hands-on, case-driven workshop",
@@ -59,6 +62,8 @@ const courses = [
     number: "02",
     title: "Applied LLM for Developers",
     tagline: "Build Production-Grade AI",
+    summary:
+      "Enable developers to architect, implement, and ship real, safe, and reliable GenAI applications — covering LLM internals, RAG pipelines, agent orchestration, and responsible AI practices.",
     audience:
       "Developers, architects, and technical teams who want to build production-grade LLM-powered applications — not just prototypes.",
     format: "5 days · 30 hours · Live sessions, guided labs, and a capstone project",
@@ -82,6 +87,8 @@ const courses = [
     number: "03",
     title: "Enterprise LLM Security",
     tagline: "Defend the AI Attack Surface",
+    summary:
+      "Defend the new AI attack surface with actionable enterprise-grade controls — covering OWASP LLM Top 10, prompt injection defence, RAG hardening, governance frameworks, and a live red-vs-blue simulation.",
     audience:
       "Security teams, architects, platform engineers, and developers responsible for integrating, defending, and governing AI systems at enterprise scale.",
     format: "2 days · 12 hours · Live sessions, guided labs, and attack-defence simulation",
@@ -104,6 +111,8 @@ const courses = [
     number: "04",
     title: "Applied LLM for Product Managers",
     tagline: "Build Better AI Products",
+    summary:
+      "Build better AI products by understanding what happens under the hood — without writing code. Covers LLM decision-making, AI product specifications, failure modes, governance, and communicating AI strategy to leadership.",
     audience:
       "Product managers, product owners, and business analysts responsible for defining, scoping, and delivering AI-powered products.",
     format: "2 days · 12 hours · Workshop with live product exercises",
@@ -240,9 +249,9 @@ export default function AiUpskillingPage() {
             {courses.map((course) => (
               <article
                 key={course.number}
-                className="rounded-2xl border border-default bg-surface p-6 md:p-8"
+                className="flex flex-col rounded-2xl border border-default bg-surface p-6 md:p-8"
               >
-                <div className="mb-4 flex items-start justify-between gap-4">
+                <div className="mb-3 flex items-start justify-between gap-4">
                   <div>
                     <p className="mb-1 font-mono text-xs uppercase tracking-widest text-gold">
                       {course.tagline}
@@ -255,29 +264,16 @@ export default function AiUpskillingPage() {
                     {course.number}
                   </span>
                 </div>
-                <p className="mb-1 text-sm text-secondary">{course.audience}</p>
-                <p className="mb-5 font-mono text-xs text-muted">{course.format}</p>
+                <p className="mb-4 font-mono text-xs text-muted">{course.format}</p>
+                <p className="mb-5 text-sm leading-relaxed text-secondary">
+                  {course.summary}
+                </p>
 
                 <p className="mb-3 font-mono text-xs uppercase tracking-widest text-gold">
-                  What participants learn
+                  Key outcomes
                 </p>
-                <ul className="mb-5 space-y-2">
-                  {course.learn.map((item) => (
-                    <li
-                      key={item}
-                      className="flex gap-2 text-sm leading-relaxed text-secondary"
-                    >
-                      <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-gold" />
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-
-                <p className="mb-3 font-mono text-xs uppercase tracking-widest text-gold">
-                  Outcomes
-                </p>
-                <ul className="space-y-2">
-                  {course.outcomes.map((item) => (
+                <ul className="mb-6 flex-1 space-y-2">
+                  {course.outcomes.slice(0, 3).map((item) => (
                     <li
                       key={item}
                       className="flex gap-2 text-sm leading-relaxed text-secondary"
@@ -287,6 +283,10 @@ export default function AiUpskillingPage() {
                     </li>
                   ))}
                 </ul>
+
+                <Button href="/contact" variant="outline">
+                  Explore more →
+                </Button>
               </article>
             ))}
           </div>

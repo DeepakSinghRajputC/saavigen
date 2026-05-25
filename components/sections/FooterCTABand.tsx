@@ -12,8 +12,8 @@ export function FooterCTABand() {
             heading="Ready to strengthen security for the AI-powered enterprise?"
             subheading="Tell us where you are today. We will help you identify a practical path forward."
           />
-          <Button href="/contact" variant="gold">
-            Contact Me
+          <Button href="/contact" variant="teal">
+            Contact Us
           </Button>
         </div>
       </div>

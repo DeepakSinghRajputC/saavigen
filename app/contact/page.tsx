@@ -5,7 +5,7 @@ import { CONTACT_EMAIL } from "@/lib/site";
 
 export const metadata = pageMetadata(
   "Contact | SaaviGenAI",
-  "Get in touch with SaaviGenAI about Saavi-SOC, Saavi-AIDR, or AI upskilling for your organisation.",
+  "Get in touch with SaaviGenAI about Saavi SOC, Saavi AIDR, or AI upskilling for your organisation.",
   "/contact",
 );
 
@@ -33,7 +33,9 @@ export default function ContactPage() {
               <p className="mb-0.5 font-mono text-xs uppercase tracking-widest text-gold">
                 Email
               </p>
-              <p className="text-sm font-semibold text-primary">{CONTACT_EMAIL}</p>
+              <p className="text-sm font-semibold text-primary">
+                {CONTACT_EMAIL}
+              </p>
             </div>
           </a>
 
@@ -48,15 +50,17 @@ export default function ContactPage() {
               <p className="mb-0.5 font-mono text-xs uppercase tracking-widest text-gold">
                 Phone
               </p>
-              <p className="text-sm font-semibold text-primary">{CONTACT_PHONE}</p>
+              <p className="text-sm font-semibold text-primary">
+                {CONTACT_PHONE}
+              </p>
             </div>
           </a>
         </div>
 
         <p className="mt-8 max-w-md text-sm leading-relaxed text-secondary">
-          We aim to respond to all enquiries within 1–2 business days. For discovery
-          calls or programme proposals, please mention which service you are interested
-          in when you reach out.
+          We aim to respond to all enquiries within 1–2 business days. For
+          discovery calls or programme proposals, please mention which service
+          you are interested in when you reach out.
         </p>
       </div>
     </section>

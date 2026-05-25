@@ -19,8 +19,8 @@ export function HeroSection({ label, heading, subheading }: HeroSectionProps) {
         <p className="mb-8 max-w-2xl leading-relaxed text-on-dark md:text-lg">
           {subheading}
         </p>
-        <Button href="/contact" variant="gold">
-          Contact Me
+        <Button href="/contact" variant="teal">
+          Contact Us
         </Button>
       </div>
     </section>

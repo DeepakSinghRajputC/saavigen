@@ -31,18 +31,32 @@ export function Navbar() {
           <Image
             src={logoPath}
             alt="SaaviGenAI key logo"
-            width={44}
-            height={44}
+            width={58}
+            height={58}
             priority
             className="rounded-full"
           />
-          <span className="hidden items-end gap-1 font-display text-xl font-bold text-primary sm:flex">
-            SaaviGenAI{" "}
-            <span className="mb-1.5 h-1.5 w-1.5 rounded-full bg-gold" />
-          </span>
+          <div className="hidden flex-col gap-0.5 sm:flex">
+            <span className="flex items-end gap-1 font-display text-xl font-bold text-primary">
+              SaaviGenAI{" "}
+              <span className="mb-1.5 h-1.5 w-1.5 rounded-full bg-gold" />
+            </span>
+            <span className="font-mono text-[10px] uppercase tracking-wider text-black">
+              The Key to Secure Enterprise AI Systems
+            </span>
+          </div>
         </Link>
 
         <div className="hidden items-center gap-7 md:flex">
+          <Link
+            className={cn(
+              "border-b-2 border-transparent py-7 text-sm font-medium text-secondary transition-colors hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal focus-visible:ring-offset-2",
+              pathname === "/" && "border-gold font-semibold text-primary",
+            )}
+            href="/"
+          >
+            Home
+          </Link>
           <div className="group relative">
             <button
               className={cn(
@@ -82,7 +96,7 @@ export function Navbar() {
 
         <div className="hidden md:block">
           <Button href="/contact" className="px-5 py-2.5">
-            Contact Me
+            Contact Us
           </Button>
         </div>
 
@@ -100,6 +114,16 @@ export function Navbar() {
       {open ? (
         <div className="border-t border-default bg-base px-6 py-5 md:hidden">
           <div className="flex flex-col gap-1">
+            <Link
+              className={cn(
+                "rounded-xl px-4 py-3 text-sm font-medium text-secondary",
+                pathname === "/" && "bg-surface font-semibold text-primary",
+              )}
+              href="/"
+              onClick={() => setOpen(false)}
+            >
+              Home
+            </Link>
             {navigation.map((item) => (
               <Link
                 key={item.href}
@@ -119,7 +143,7 @@ export function Navbar() {
               className="mt-3"
               onClick={() => setOpen(false)}
             >
-              Contact Me
+              Contact Us
             </Button>
           </div>
         </div>

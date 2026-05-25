@@ -1,4 +1,11 @@
-import { BarChart3, Clock, DollarSign, ShieldCheck, Users, Zap } from "lucide-react";
+import {
+  BarChart3,
+  Clock,
+  DollarSign,
+  ShieldCheck,
+  Users,
+  Zap,
+} from "lucide-react";
 import { FooterCTABand } from "@/components/sections/FooterCTABand";
 import { HeroSection } from "@/components/sections/HeroSection";
 import { DifferentiatorCard } from "@/components/ui/DifferentiatorCard";
@@ -6,7 +13,7 @@ import { SectionLabel } from "@/components/ui/SectionLabel";
 import { pageMetadata } from "@/lib/metadata";
 
 export const metadata = pageMetadata(
-  "Saavi-SOC | SaaviGenAI",
+  "Saavi SOC | SaaviGenAI",
   "Enterprise-grade threat monitoring and incident response — without the cost or complexity of building it in-house.",
   "/services/managed-soc",
 );
@@ -52,11 +59,20 @@ const howItWorks = [
 
 const compliance = [
   { code: "PCI-DSS", name: "Payment Card Industry Data Security Standard" },
-  { code: "HIPAA", name: "Health Insurance Portability and Accountability Act" },
+  {
+    code: "HIPAA",
+    name: "Health Insurance Portability and Accountability Act",
+  },
   { code: "GDPR", name: "General Data Protection Regulation" },
   { code: "NIST", name: "NIST Cybersecurity Framework" },
-  { code: "CIS Controls", name: "Centre for Internet Security Critical Security Controls" },
-  { code: "ISO 27001", name: "International Information Security Management Standard" },
+  {
+    code: "CIS Controls",
+    name: "Centre for Internet Security Critical Security Controls",
+  },
+  {
+    code: "ISO 27001",
+    name: "International Information Security Management Standard",
+  },
 ];
 
 const audiences = [
@@ -71,7 +87,7 @@ export default function ManagedSocPage() {
   return (
     <>
       <HeroSection
-        label="Saavi-SOC"
+        label="Saavi SOC"
         heading="Your Security. Always On. Always Watching."
         subheading="Enterprise-grade threat monitoring and incident response — without the cost or complexity of building it in-house."
       />
@@ -112,7 +128,9 @@ export default function ManagedSocPage() {
                 <p className="mb-2 font-mono text-xs uppercase tracking-widest text-gold">
                   {item.code}
                 </p>
-                <p className="text-sm leading-relaxed text-secondary">{item.name}</p>
+                <p className="text-sm leading-relaxed text-secondary">
+                  {item.name}
+                </p>
               </div>
             ))}
           </div>
@@ -155,9 +173,9 @@ export default function ManagedSocPage() {
           <blockquote className="mt-8 rounded-2xl border border-default bg-base p-6 md:p-10">
             <div className="mb-4 h-0.5 w-8 bg-gold" />
             <p className="font-display text-xl italic leading-relaxed text-primary">
-              &ldquo;We don&apos;t just monitor your environment. We understand it,
-              contextualise it, and help you act on it — without drowning you in
-              alerts.&rdquo;
+              &ldquo;We don&apos;t just monitor your environment. We understand
+              it, contextualise it, and help you act on it — without drowning
+              you in alerts.&rdquo;
             </p>
           </blockquote>
         </div>

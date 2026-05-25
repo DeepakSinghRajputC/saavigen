@@ -2,7 +2,7 @@ import Link from "next/link";
 import type { ButtonHTMLAttributes, ReactNode } from "react";
 import { cn } from "@/lib/utils";
 
-type Variant = "primary" | "gold" | "outline";
+type Variant = "primary" | "gold" | "outline" | "teal";
 
 const variants: Record<Variant, string> = {
   primary:
@@ -10,6 +10,7 @@ const variants: Record<Variant, string> = {
   gold: "bg-gold text-navy hover:opacity-90 transition-opacity duration-150",
   outline:
     "border border-navy text-navy hover:bg-navy hover:text-white transition-colors duration-150",
+  teal: "bg-teal text-white hover:bg-teal-dark transition-colors duration-150",
 };
 
 const base =
