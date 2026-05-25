@@ -9,7 +9,7 @@ export type ServiceCardProps = {
 
 export function ServiceCard({ number, title, description, href }: ServiceCardProps) {
   return (
-    <article className="relative overflow-hidden rounded-2xl border border-default bg-surface p-8">
+    <article className="relative overflow-hidden rounded-2xl border border-default bg-surface p-8 transition-transform duration-200 hover:-translate-y-1.5">
       <div className="absolute left-0 right-0 top-0 h-1 bg-gold" />
       <span className="absolute right-6 top-5 font-mono text-xs tracking-wide text-gold">{number}</span>
       <h3 className="mt-4 font-display text-xl font-bold text-primary md:text-2xl">{title}</h3>

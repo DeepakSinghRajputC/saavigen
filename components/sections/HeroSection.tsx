@@ -20,7 +20,7 @@ export function HeroSection({ label, heading, subheading }: HeroSectionProps) {
           {subheading}
         </p>
         <Button href="/contact" variant="gold">
-          Contact Me
+          Get in Touch
         </Button>
       </div>
     </section>

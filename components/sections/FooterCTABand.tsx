@@ -13,7 +13,7 @@ export function FooterCTABand() {
             subheading="Tell us where you are today. We will help you identify a practical path forward."
           />
           <Button href="/contact" variant="gold">
-            Contact Me
+            Get in Touch
           </Button>
         </div>
       </div>
