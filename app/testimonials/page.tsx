@@ -16,7 +16,7 @@ const testimonials = [
     name: "Sarah Chen",
     title: "Chief Information Security Officer",
     company: "Nexlance Financial Services",
-    service: "Saavi SOC",
+    service: "SaaviSOC",
   },
   {
     quote:
@@ -24,15 +24,15 @@ const testimonials = [
     name: "Marcus Williams",
     title: "Chief Technology Officer",
     company: "Healthbridge Technologies",
-    service: "Saavi SOC",
+    service: "SaaviSOC",
   },
   {
     quote:
-      "We deployed three production LLM agents before realising we had zero visibility into what they were actually doing at runtime. Saavi AIDR gave us a complete audit trail and flagged an agent misuse pattern within the first two weeks — an unexpected tool invocation that was quietly accessing data outside its intended scope. We would never have found that otherwise.",
+      "We deployed three production LLM agents before realising we had zero visibility into what they were actually doing at runtime. SaaviAIDR gave us a complete audit trail and flagged an agent misuse pattern within the first two weeks — an unexpected tool invocation that was quietly accessing data outside its intended scope. We would never have found that otherwise.",
     name: "Priya Nair",
     title: "Head of AI Platform",
     company: "Cognex Commerce",
-    service: "Saavi AIDR",
+    service: "SaaviAIDR",
   },
   {
     quote:
@@ -44,24 +44,24 @@ const testimonials = [
   },
   {
     quote:
-      "SaaviGenAI doesn't just protect AI systems — they help you build the governance framework around them. The combination of Saavi AIDR monitoring and the upskilling workshops gave us something credible to present to regulators and our risk committee. It showed we're not just adopting AI, we're adopting it responsibly.",
+      "SaaviGenAI doesn't just protect AI systems — they help you build the governance framework around them. The combination of SaaviAIDR monitoring and the upskilling workshops gave us something credible to present to regulators and our risk committee. It showed we're not just adopting AI, we're adopting it responsibly.",
     name: "Ananya Sharma",
     title: "Chief Risk Officer",
     company: "Stratiq Ventures",
-    service: "Saavi AIDR + AI Upskilling",
+    service: "SaaviAIDR + AI Upskilling",
   },
 ];
 
 const valueCards = [
   {
-    service: "Saavi SOC",
+    service: "SaaviSOC",
     heading: "Onboarded in weeks, not months",
     body: "Most organisations expect SOC deployment to take quarters. SaaviSOC's structured onboarding gets you from zero to active 24×7 security coverage in weeks — zero CAPEX, no hiring surge, no months of setup.",
   },
   {
-    service: "Saavi AIDR",
+    service: "SaaviAIDR",
     heading: "Visibility into a threat surface",
-    body: "AI has introduced an entirely new attack surface — prompts, agents, tool calls, model behaviour — that your firewall, SIEM, and DLP were never built to see. Saavi AIDR gives you eyes on that surface for the first time.",
+    body: "AI has introduced an entirely new attack surface — prompts, agents, tool calls, model behaviour — that your firewall, SIEM, and DLP were never built to see. SaaviAIDR gives you eyes on that surface for the first time.",
   },
   {
     service: "AI Upskilling",
